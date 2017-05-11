@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <title>第一个html文件</title>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+</head>
+<body>
+  <div id="content">## 我的第一篇博客  
+    
+   **宁**  
+    __ 行百里者半九十__
+  </div>
+<script>
+  var content = document.getElementById('content');
+  var markdown = content.innerHTML;
+  document.getElementById('content').innerHTML = marked(markdown);
+  </script>
+</body>
 </html>
