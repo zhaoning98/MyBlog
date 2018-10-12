@@ -41,8 +41,20 @@
 5、跨域
   https://www.cnblogs.com/guanhuachen/p/6044677.html
 	1)、JSONP
-	2)
-	3)
-	4)
-	5)
-	6)
+  JSONP 是 json with padding 的简称，jsonp 看起来跟 json 差不多，只不过是包含在函数中 json 数据而已。
+  `callback({"name": "xiaotutu"})`
+  
+  因为 script 标签是不受同源策略影响的，它可以引入来自任何地方的 js 文件。
+  而 jsonp 的原理就是，在客户端和服务器定义一个函数，当客户端发起一个请求时，服务器端返回一段 JavaScript 代码，其中调用了在客户端定义的函数，并将相应的数据作为参数传入该函数。
+  一般情况下，为了这个 script 标签能够动态的调用，我们可以通过 JavaScript 动态的创建 script 标签，这样我们就可以灵活调用远程服务了。
+	2)、img
+	3)、CORS (Cross-Origin Resource Sharing, 跨域资源共享)
+	4)、document.domain
+	5)、window.postMessage
+```
+// 发送端
+
+
+// 接收端
+```
+
